@@ -12,8 +12,6 @@ app.get("/api/hello", (req, res) => {
   res.status(200).json({ message: "Hello, world!" });
 });
 
-
-
 app.post("/api/users", (req, res) => {
   const { name, email } = req.body;
   if (!name || !email) {
